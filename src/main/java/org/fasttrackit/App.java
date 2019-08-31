@@ -7,8 +7,8 @@ public class App {
         Adopter adopter = new Adopter();
         AnimalRescuer animal = new AnimalRescuer();
         Dog dog = new Dog(20,"grey");
-        Vet v = new Vet();
-        Activity activity =new Activity(10);
+        Vet v = new Vet("surgeon");
+        Activity activity =new Activity(10,"minute");
         System.out.println("Guarantee of dog food:");
         Calendar cal = Calendar.getInstance();
         Calendar future = Calendar.getInstance();
@@ -36,6 +36,7 @@ public class App {
         System.out.println(activity.MakeSound("vauu"));
         System.out.println(activity.minute);
         animal.gender();
+
 
 
 

@@ -1,14 +1,15 @@
 package org.fasttrackit;
 
-public class Activity extends AnimalRescuer {
+public class Activity extends Dog {
     public int playMood;
     public int minute;
     public String  MakeSound;
 
-    public Activity(int minute ) {
-         this.minute=10;
+    public Activity( int minute , String game){
+        super(10,"game");
+       this.minute=10;
+       this.color=game;
     }
-
     public int playMood(int playMood) {
         if (playMood >= 6) {
             System.out.println("Happy");

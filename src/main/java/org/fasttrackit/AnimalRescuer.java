@@ -3,8 +3,8 @@ package org.fasttrackit;
 import java.util.*;
 
    public class AnimalRescuer {
-     String name;
-    public int age;
+    protected String name;
+    protected int age;
     public String gender;
     Scanner scanner;
 

@@ -12,7 +12,6 @@ public class Dog extends AnimalRescuer {
     public int quantity;
     public int eat;
 
-
     protected String getName() {
         return name;
     }
