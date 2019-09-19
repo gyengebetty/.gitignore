@@ -1,26 +1,47 @@
 package org.fasttrackit;
 
-public class Activity extends Dog {
+public class Activity extends AnimalRescuer {
     public int playMood;
     public int minute;
-    public String  MakeSound;
+    public String MakeSound;
 
-    public Activity( int minute , String game){
-        super(10,"game");
-       this.minute=10;
-       this.color=game;
+    public Activity() {
+
     }
-    public int playMood(int playMood) {
+
+    public Activity(int minute, String game) {
+        this.minute = 10;
+
+    }
+
+    public int getPlayMood() {
+        return playMood;
+    }
+
+    public int setplayMood(int playMood) {
         if (playMood >= 6) {
             System.out.println("Happy");
         } else {
             System.out.println("Sad");
-        }return playMood;
+        }
+        return playMood;
     }
 
-    public String MakeSound(String vauu) {
+    public String getMakeSound() {
+        return MakeSound;
+    }
+
+    public String setMakeSound(String vauu) {
         System.out.println("My dog's makes such a sound:" + "vauu");
         return vauu;
     }
 
+    public void getMood() {
+    }
+    public String setMood(String mood) {
+        System.out.println("he is happy to play");
+            return mood;
+
+
+    }
 }

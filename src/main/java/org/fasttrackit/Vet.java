@@ -3,27 +3,28 @@ package org.fasttrackit;
 
 public class Vet extends AnimalRescuer {
    public String specialization;
-   int health;
+   public int health;
 
-   protected String getName() {
-            return name;
-   }
-   protected String setName(String Jeff){
-       this.name="Jeff";
-       return name;
-   }
-     protected int getAge(int getAge){
-          this.age=50;
-          return age;
-  }
-  public Vet(String specialization){
+    public void getHealth() {
+        this.health=health;
+    }
+
+    public int setHealth(int health) {
+        this.health = health;
+        return health;
+    }
+
+    public Vet(String specialization){
         this.specialization="surgeon";
+    }
+    public void getMood() {
+    }
+    public String setMood(String mood) {
+       System.out.println("HE WANTS TO HEAL IT ");
+       return mood;
 
-  }
+    }
 
 
-
-
-
-}
+    }
 
