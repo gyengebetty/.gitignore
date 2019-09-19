@@ -18,7 +18,7 @@ public class Dog extends AnimalRescuer {
 
     public Dog(double weight, String color,int length,int eat) {
         this.color = "Gray";
-        
+
     }
 
     public String getColor() {
